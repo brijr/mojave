@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { DM_Sans as FontSans } from "next/font/google";
 import { Layout, Main, Section, Container } from "@/components/craft";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
@@ -13,8 +13,9 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "MDX Starter Template for Building Websites",
-  description: "Made by Bridger Tower at 9d8 and Yuzu.",
+  title: "Studio Mojave | St George, Utah Design and Web Development Studio",
+  description:
+    "Studio Mojave is a Design and Code studio based in St George, Utah. We specialize in brnad design and web development.",
 };
 
 export default function RootLayout({
