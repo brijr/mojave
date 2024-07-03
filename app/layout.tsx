@@ -15,7 +15,7 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Studio Mojave | St George, Utah Design and Web Development Studio",
   description:
-    "Studio Mojave is a Design and Code studio based in St George, Utah. We specialize in brnad design and web development.",
+    "Studio Mojave is a Design and Code studio based in St George, Utah. Mojave specializes in brand design and web development. Created by Bridger Tower.",
 };
 
 export default function RootLayout({
