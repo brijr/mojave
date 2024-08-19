@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans as FontSans } from "next/font/google";
 import { Layout, Main, Section, Container } from "@/components/craft";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 
@@ -43,6 +44,7 @@ export default function RootLayout({
             </Section>
           </Main>
         </ThemeProvider>
+        <Analytics />
       </body>
     </Layout>
   );
