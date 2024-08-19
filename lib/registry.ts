@@ -1,4 +1,4 @@
-type PortfolioItem = {
+export type PortfolioItem = {
   id: string;
   name: string;
   url: string;
