@@ -39,7 +39,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Main>
-            <Section>
+            <Section className="py-2">
               <Container>{children}</Container>
             </Section>
           </Main>
