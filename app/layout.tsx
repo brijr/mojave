@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Layout>
+    <Layout className="bg-stone-200">
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
