@@ -28,20 +28,23 @@ const PortfolioImage = ({
   return (
     <div style={{ animationDelay: `${delay}ms` }} className="fade-in-bottom">
       <Image
-        src={item.url}
+        src={`/portfolio/${item.name}.svg`}
         alt={item.name}
         width={1080}
         height={1080}
         className="border rounded"
         placeholder="blur"
-        blurDataURL={item.url}
+        blurDataURL={`/portfolio/${item.name}.svg`}
       />
       <div className="flex gap-2 mt-2 items-center justify-between">
         <p className="text-sm">{item.name}</p>
-        <Link href={item.url}>
-          <Link2Icon />
-          <span className="sr-only">Link to {item.name}</span>
-        </Link>
+        {item.url && (
+          <Link href={item.url} className="flex gap-1 items-center text-sm">
+            View
+            <Link2Icon />
+            <span className="sr-only">Link to {item.name}</span>
+          </Link>
+        )}
       </div>
     </div>
   );
