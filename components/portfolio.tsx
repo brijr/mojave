@@ -54,7 +54,7 @@ const PortfolioImage = ({
             alt={item.name}
             width={1920}
             height={1920}
-            className="border rounded"
+            className="rounded"
             placeholder="blur"
             blurDataURL={`/portfolio/${item.name}.svg`}
           />
