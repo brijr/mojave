@@ -1,7 +1,7 @@
 export type PortfolioItem = {
   id: string;
   name: string;
-  url: string;
+  url?: string;
 };
 
 type PortfolioRegistry = {
@@ -11,214 +11,202 @@ type PortfolioRegistry = {
 const portfolioRegistry: PortfolioRegistry = {
   items: [
     {
-      id: "1",
+      id: "9d8",
       name: "9d8",
-      url: "/portfolio/9d8.svg",
+      url: "https://9d8.dev",
     },
     {
-      id: "2",
-      name: "24 Ventures",
-      url: "/portfolio/24 Ventures.svg",
-    },
-    {
-      id: "3",
-      name: "761",
-      url: "/portfolio/761.svg",
-    },
-    {
-      id: "4",
-      name: "Alabaster",
-      url: "/portfolio/Alabaster.svg",
-    },
-    {
-      id: "5",
+      id: "alpine-codex",
       name: "Alpine Codex",
-      url: "/portfolio/Alpine Codex.svg",
+      url: "https://alpinecodex.com",
     },
     {
-      id: "6",
-      name: "Ampry",
-      url: "/portfolio/Ampry.svg",
-    },
-    {
-      id: "7",
-      name: "ASAP Engineering",
-      url: "/portfolio/ASAP Engineering.svg",
-    },
-    {
-      id: "8",
-      name: "btower.dev",
-      url: "/portfolio/btower.dev.svg",
-    },
-    {
-      id: "9",
-      name: "BuilderKit",
-      url: "/portfolio/BuilderKit.svg",
-    },
-    {
-      id: "10",
-      name: "Cascade",
-      url: "/portfolio/Cascade.svg",
-    },
-    {
-      id: "11",
-      name: "Code Craft",
-      url: "/portfolio/Code Craft.svg",
-    },
-    {
-      id: "12",
-      name: "Data Wave",
-      url: "/portfolio/Data Wave.svg",
-    },
-    {
-      id: "13",
-      name: "Design Engineer",
-      url: "/portfolio/Design Engineer.svg",
-    },
-    {
-      id: "14",
-      name: "DocsAI",
-      url: "/portfolio/DocsAI.svg",
-    },
-    {
-      id: "15",
-      name: "Enough Studios",
-      url: "/portfolio/Enough Studios.svg",
-    },
-    {
-      id: "16",
-      name: "Fjord",
-      url: "/portfolio/Fjord.svg",
-    },
-    {
-      id: "17",
-      name: "Flow House",
-      url: "/portfolio/Flow House.svg",
-    },
-    {
-      id: "18",
-      name: "Frankk",
-      url: "/portfolio/Frankk.svg",
-    },
-    {
-      id: "19",
-      name: "Fuji Paper",
-      url: "/portfolio/Fuji Paper.svg",
-    },
-    {
-      id: "20",
-      name: "Internet Services",
-      url: "/portfolio/Internet Services.svg",
-    },
-    {
-      id: "21",
-      name: "Ishi",
-      url: "/portfolio/Ishi.svg",
-    },
-    {
-      id: "22",
-      name: "Lasso Cactus",
-      url: "/portfolio/Lasso Cactus.svg",
-    },
-    {
-      id: "23",
-      name: "Next Utah",
-      url: "/portfolio/Next Utah.svg",
-    },
-    {
-      id: "24",
+      id: "outr",
       name: "Outr",
-      url: "/portfolio/Outr.svg",
+      url: "https://outr.io",
     },
     {
-      id: "25",
+      id: "24-ventures",
+      name: "24 Ventures",
+    },
+    {
+      id: "761",
+      name: "761",
+      url: "https://github.com/alpinecodex/761",
+    },
+    {
+      id: "alabaster",
+      name: "Alabaster",
+    },
+    {
+      id: "ampry",
+      name: "Ampry",
+      url: "https://ampry.com",
+    },
+    {
+      id: "asap-engineering",
+      name: "ASAP Engineering",
+      url: "https://asap.engineering",
+    },
+    {
+      id: "brijr",
+      name: "brijr",
+      url: "https://brijr.dev",
+    },
+    {
+      id: "builderkit",
+      name: "BuilderKit",
+      url: "https://builderkit.io",
+    },
+    {
+      id: "cascade",
+      name: "Cascade",
+    },
+    {
+      id: "code-craft",
+      name: "Code Craft",
+    },
+    {
+      id: "data-wave",
+      name: "Data Wave",
+    },
+    {
+      id: "design-engineer",
+      name: "Design Engineer",
+      url: "https://designengineer.fyi",
+    },
+    {
+      id: "docsai",
+      name: "DocsAI",
+      url: "https://docsai.org",
+    },
+    {
+      id: "enough-studios",
+      name: "Enough Studios",
+      url: "https://enoughstudios.com",
+    },
+    {
+      id: "fjord",
+      name: "Fjord",
+      url: "https://fjord.dev",
+    },
+    {
+      id: "flow-house",
+      name: "Flow House",
+    },
+    {
+      id: "frankk",
+      name: "Frankk",
+    },
+    {
+      id: "fuji-paper",
+      name: "Fuji Paper",
+    },
+    {
+      id: "internet-services",
+      name: "Internet Services",
+      url: "https://internetservices.com",
+    },
+    {
+      id: "ishi",
+      name: "Ishi",
+      url: "https://ishi.dev",
+    },
+    {
+      id: "lasso-cactus",
+      name: "Lasso Cactus",
+    },
+    {
+      id: "next-utah",
+      name: "Next Utah",
+      url: "https://nextutah.com",
+    },
+    {
+      id: "parent-care",
       name: "Parent Care",
-      url: "/portfolio/Parent Care.svg",
+      url: "https://parentcare.co",
     },
     {
-      id: "26",
+      id: "poolhouse-studio",
       name: "Poolhouse Studio",
-      url: "/portfolio/Poolhouse Studio.svg",
+      url: "https://poolhouse.studio",
     },
     {
-      id: "27",
+      id: "presets",
       name: "Presets",
-      url: "/portfolio/Presets.svg",
     },
     {
-      id: "28",
+      id: "rem-blair",
       name: "Rem Blair",
-      url: "/portfolio/Rem Blair.svg",
+      url: "https://remblair.com",
     },
     {
-      id: "29",
+      id: "router-so",
       name: "Router.so",
-      url: "/portfolio/Router.so.svg",
+      url: "https://router.so",
     },
     {
-      id: "30",
+      id: "socal-flights",
       name: "Socal Flights",
-      url: "/portfolio/Socal Flights.svg",
+      url: "https://socal.flights",
     },
     {
-      id: "31",
+      id: "solar-funnel",
       name: "Solar Funnel",
-      url: "/portfolio/Solar Funnel.svg",
     },
     {
-      id: "32",
+      id: "sondr",
       name: "Sondr",
-      url: "/portfolio/Sondr.svg",
+      url: "https://sondrmarketing.com",
     },
     {
-      id: "33",
-      name: "Studio Kaizen-1",
-      url: "/portfolio/Studio Kaizen-1.svg",
-    },
-    {
-      id: "34",
+      id: "studio-kaizen",
       name: "Studio Kaizen",
-      url: "/portfolio/Studio Kaizen.svg",
     },
     {
-      id: "35",
+      id: "swyftfin",
       name: "SwyftFin",
-      url: "/portfolio/SwyftFin.svg",
+      url: "https://swyftfin.com",
     },
     {
-      id: "36",
+      id: "teegle",
       name: "Teegle",
-      url: "/portfolio/Teegle.svg",
+      url: "https://teegle.co",
     },
     {
-      id: "37",
+      id: "travel-mellow",
       name: "Travel Mellow",
-      url: "/portfolio/Travel Mellow.svg",
+      url: "https://travelmellow.com",
     },
     {
-      id: "38",
+      id: "wavefinder",
       name: "WaveFinder",
-      url: "/portfolio/WaveFinder.svg",
+      url: "https://wavefinder.io",
     },
     {
-      id: "39",
+      id: "windpress",
       name: "Windpress",
-      url: "/portfolio/Windpress.svg",
+      url: "https://windpress.dev",
     },
     {
-      id: "40",
+      id: "wip",
       name: "WIP",
-      url: "/portfolio/WIP.svg",
+      url: "https://wip.ac",
     },
     {
-      id: "41",
+      id: "yuzu",
       name: "Yuzu",
-      url: "/portfolio/Yuzu.svg",
+      url: "https://yuzu.design",
     },
     {
-      id: "42",
+      id: "zion",
       name: "Zion",
-      url: "/portfolio/Zion.svg",
+      url: "https://zion.surf",
+    },
+    {
+      id: "studio-kaizen-2",
+      name: "Studio Kaizen",
+      url: "https://www.kaizen.surf/",
     },
   ],
 };
