@@ -121,11 +121,6 @@ The template is optimized for performance:
 - Font optimization
 - Minimal bundle size
 
-## Support & Updates
-
-- 🐛 [Issue Tracker](https://github.com/brijr/mojave/issues)
-- 💬 [Discussions](https://github.com/brijr/mojave/discussions)
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
