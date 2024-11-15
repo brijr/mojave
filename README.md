@@ -123,7 +123,6 @@ The template is optimized for performance:
 
 ## Support & Updates
 
-- 📚 [Documentation](https://github.com/brijr/mojave/wiki)
 - 🐛 [Issue Tracker](https://github.com/brijr/mojave/issues)
 - 💬 [Discussions](https://github.com/brijr/mojave/discussions)
 
@@ -133,4 +132,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Built with ❤️ using [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com)
+Built by [Bridger](https://bridgertower.com) using [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com) / Designed in the Desert 🏜️
