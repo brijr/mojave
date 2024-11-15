@@ -1,107 +1,136 @@
-# Next.js and MDX Starter
+# Mojave - Creative Studio Template
 
-> The fastest way to ship a website ⚡︎
+> A modern, fully-featured creative studio template built with Next.js 14, TypeScript, and Tailwind CSS ⚡️
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbrijr%2Fmdx-starter&project-name=mdx-starter&repository-name=mdx-starter&demo-url=https%3A%2F%2Fmdx.bridger.to)
-
----
-
-Learn more about [MDX](https://mdxjs.com) and [Markdown](https://www.markdownguide.org).
-
-How [MDX works with Next.js](https://nextjs.org/docs/app/building-your-application/configuring/mdx).
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbrijr%2Fmojave)
 
 ---
 
-This is a starter template for building websites using Next.js and MDX. It provides a fast and efficient way to create content-driven websites with the power of React components and the simplicity of Markdown.
+## Overview
 
-## Features
+Mojave is a professional creative studio template designed for agencies, freelancers, and creative professionals. Built with modern technologies and best practices, it provides everything you need to showcase your work and services effectively.
 
-- Next.js 14 with App Router
-- MDX support for content creation
-- Tailwind CSS for styling
-- Dark mode support with next-themes
-- Typography plugin for Tailwind CSS
-- Customizable components
-- Ready-to-use layout components
+## Key Features
+
+- 🎨 Modern, minimalist design
+- 📱 Fully responsive layout
+- 🌓 Dark/light mode support
+- ⚡️ Next.js 14 App Router
+- 💨 Tailwind CSS for styling
+- 🔧 TypeScript for type safety
+- 📝 MDX support for rich content
+- 🎯 SEO optimized
+- 📊 Vercel Analytics integration
+- 🧩 Radix UI components
+- 📋 Form handling with react-hook-form
+- ✨ Modern animations
 
 ## Quick Start
 
 1. Clone the repository:
-```
-git clone https://github.com/brijr/mdx-starter.git
-cd mdx-starter
+
+```bash
+git clone https://github.com/brijr/mojave.git
+cd mojave
 ```
 
 2. Install dependencies:
-```
+
+```bash
 pnpm install
 ```
 
 3. Run the development server:
-```
-pnpm run dev
-```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
-
-## Project Structure
-
-- `app/`: Contains the main application code
-- `components/`: Reusable React components
-- `lib/`: Utility functions and helpers
-- `public/`: Static assets
-- `styles/`: Global styles and Tailwind CSS configuration
-
-## Writing Content
-
-Create your content using MDX files in the `app` directory. You can use a mix of Markdown and React components in your MDX files.
-
-Example:
-
-```1:9:app/page.mdx
-import { ThemeToggle } from "@/components/theme/theme-toggle";
-
-# Hello World!
-
-This is the [MDX Starter Template](https://github.com/brijr/mdx-starter). It is built with [brijr/craft](https://github.com/brijr/craft) and [shadcn/ui](https://ui.shadcn.com). Below you will find an example of the markdown home page -> `/page.tsx`.
-
-<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbrijr%2Fmdx-starter&project-name=mdx-starter&repository-name=mdx-starter&demo-url=https%3A%2F%2Fmdx.bridger.to">
-  <img src="https://vercel.com/button" alt="Deploy with Vercel" />
-</a>
+```bash
+pnpm dev
 ```
 
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Customization
+## Template Structure
 
-### Theming
+```
+mojave/
+├── app/                # Next.js app directory
+│   ├── layout.tsx     # Root layout
+│   └── page.mdx       # Home page
+├── components/        # Reusable components
+│   ├── ui/           # UI components
+│   ├── theme/        # Theme components
+│   ├── craft.tsx     # Creative content components
+│   └── portfolio.tsx # Portfolio components
+├── lib/              # Utility functions
+├── public/           # Static assets
+└── styles/           # Global styles
+```
 
-The project uses `next-themes` for dark mode support. You can customize the theme in the `tailwind.config.ts` file.
+## Customization Guide
 
-### Typography
+### 1. Branding & Content
 
-The Tailwind CSS typography plugin is included for consistent and beautiful typography. Customize it in the `tailwind.config.ts` file.
+- Update site metadata in `app/layout.tsx`
+- Modify the home page content in `app/page.mdx`
+- Replace logos and images in the `public` directory
 
-### Components
+### 2. Styling
 
-Custom components are available in the `components` directory. You can use these in your MDX files or create new ones as needed.
+- Customize colors and theme in `tailwind.config.ts`
+- Modify global styles in `app/globals.css`
+- Update component styles in individual component files
 
-## Deployment
+### 3. Portfolio
 
-This project is ready to be deployed on Vercel. Click the button below to deploy:
+The portfolio section is fully customizable:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbrijr%2Fmdx-starter&project-name=mdx-starter&repository-name=mdx-starter&demo-url=https%3A%2F%2Fmdx.bridger.to)
+- Edit `components/portfolio.tsx` to modify the portfolio grid
+- Add your projects and case studies as MDX files
+- Customize the portfolio filtering and sorting
 
-## Learn More
+### 4. Forms & Contact
 
-- [MDX Documentation](https://mdxjs.com)
-- [Markdown Guide](https://www.markdownguide.org)
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+The template includes pre-built form components with validation:
 
-## Contributing
+- Customize form fields in the contact components
+- Update form submission handling
+- Modify success/error messages
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+### 5. Analytics
+
+Vercel Analytics is pre-configured:
+
+- Add your Vercel Analytics ID in the environment variables
+- Customize tracking events
+- Access analytics in your Vercel dashboard
+
+## Development Tools
+
+- TypeScript for type safety
+- ESLint for code quality
+- Prettier for code formatting
+- Husky for git hooks
+- PostCSS and Autoprefixer
+
+## Performance
+
+The template is optimized for performance:
+
+- Server-side rendering
+- Image optimization
+- Code splitting
+- Font optimization
+- Minimal bundle size
+
+## Support & Updates
+
+- 📚 [Documentation](https://github.com/brijr/mojave/wiki)
+- 🐛 [Issue Tracker](https://github.com/brijr/mojave/issues)
+- 💬 [Discussions](https://github.com/brijr/mojave/discussions)
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Built with ❤️ using [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com)
